@@ -17,6 +17,7 @@ class ErrorNombre : AppCompatActivity() {
             "Error nombre",
             Snackbar.LENGTH_SHORT
         ).show()
+        //
 
     }
 
