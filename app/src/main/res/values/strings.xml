@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">p</string>
+    <string name="app_name">Saludo</string>
     <string name="introduce_nombre">Escribe tu nombre</string>
     <string name="aceptar">Aceptar</string>
+    <string name="volver">Volver</string>
     <string name="nombre">Nombre</string>
 </resources>
