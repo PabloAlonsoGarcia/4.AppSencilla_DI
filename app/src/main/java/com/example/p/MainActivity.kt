@@ -36,17 +36,17 @@ class MainActivity : AppCompatActivity() {
 
     fun aceptar(view: View) {
         val intent = Intent(this@MainActivity, SaludoActivity::class.java)
-        val intent2 = Intent(this@MainActivity, SaludoActivity::class.java)
+        val intent2 = Intent(this@MainActivity, ErrorNombre::class.java)
         //Añadimos al intent la información a pasar entre actividades
         intent.putExtra("NOMBRE", txtNombre.text.toString())
         //Iniciamos la nueva actividad
 
-        if(txtNombre.toString() == "" || txtNombre.toString() == " ") {
+
             startActivity(intent2)
-        }else{
-            startActivity(intent)
-        }
+
     }
+
+
 
 
 
