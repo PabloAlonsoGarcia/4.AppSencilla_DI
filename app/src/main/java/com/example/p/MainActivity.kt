@@ -1,5 +1,6 @@
 package com.example.p
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         }*/
     }
 
+    @SuppressLint("SuspiciousIndentation")
     fun aceptar(view: View) {
 
 
