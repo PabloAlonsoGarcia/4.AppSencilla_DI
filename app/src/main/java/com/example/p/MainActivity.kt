@@ -39,14 +39,20 @@ class MainActivity : AppCompatActivity() {
 
         val intent = Intent(this@MainActivity, SaludoActivity::class.java)
         //Añadimos al intent la información a pasar entre actividades
-        intent.putExtra("NOMBRE", txtNombre.text.toString())
+
         //Iniciamos la nueva actividad
         btnAceptar.setOnClickListener {
 
-            
 
-            if ()
+        var comprobacionTexto = txtNombre.text.toString()
+
+
+            if (comprobacionTexto.isEmpty()) {
+                txtNombre.setError("No se ha ingresado ningun nombre")
+            }else{
+                intent.putExtra("NOMBRE", comprobacionTexto)
                 startActivity(intent)
+            }
         }
     }
 
